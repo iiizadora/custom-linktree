@@ -3,6 +3,7 @@
 :root {
   --color-white: #fff;
   --color-dark: #111;
+  --color-purple: #391c77;
 }
 
 * {
@@ -14,8 +15,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   height: 100vh;
-  background-image: url(./assets/image.jpg);
-  background-size: cover;
+  background: linear-gradient(to left, #8942a8, #c8ade4);
   color: var(--color-white);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,7 +74,7 @@ body {
 h1 {
   margin-top: 1.5rem;
   text-align: center;
-  color: var(--color-dark);
+  color: #fbeaff;
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -82,58 +82,70 @@ h1 {
 p {
   text-align: center;
   letter-spacing: 0.2rem;
-  font-size: 0.95rem;
-  font-weight: 300;
-  color: var(--color-white);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-dark);
 }
 
 h2 {
   margin-top: 0.75rem;
   text-align: center;
-  color:var(--color-dark);
-  font-size: 1.3rem;
-  font-weight: 600;
+  color: var(--color-purple);
+  font-size: 0.95rem;
+  font-weight: 400;
 }
 
-.container .social-field {
-  padding: 0.3rem;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+.container .social__field {
+  position: relative;
+  display: inline-block;
+  padding: 6px;
+  margin: 10px 5px;
+  width: 90%;
+  color: var(--color-dark);
+  text-transform: uppercase;
+  border-radius: 40px;
   cursor: pointer;
-  margin-top: 0.95rem;
 }
 
-.container .social-field i {
-  margin: 0 0.85rem;
-  width: 10px;
+.container .social__field i {
+  margin: 0.5rem 0.85rem;
+  width: 12px;
+  font-size: 1.1rem ;
+  
 }
 
-.container .social-field a {
+.container .social__field a {
+  font-size: 0.80rem;
+  font-weight: 500;
   text-decoration: none;
   color: var(--color-dark);
 }
-
-.container .social-field.github {
-  background: linear-gradient(to right, #fc466b, #3f5efb);
-}
-.container .social-field.linkedin {
-  background: linear-gradient(to right, #fc466b, #3f5efb);
-}
-
-.container .social-field.instagram {
-  background: linear-gradient(to right, #fc466b, #3f5efb);
-}
-
-.container .social-field:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+.container .social__field.github,
+.social__field.linkedin,
+.social__field.instagram {
+  background: linear-gradient(90deg, #845ec2, #fbeaff);
   transition: all 0.3s ease;
 }
+
+.social__field.github:hover {
+  color: var(--color-white);
+  background: #fbeaff;
+  border-radius: 40px;
+  letter-spacing: 0.6px;
+}
+.social__field.linkedin:hover {
+  color: var(--color-white);
+  background: #fbeaff;
+  border-radius: 40px;
+  letter-spacing: 0.6px;
+}
+.social__field.instagram:hover {
+  color: var(--color-white);
+  background: #fbeaff;
+  border-radius: 40px;
+  letter-spacing: 0.6px;
+}
+
 
 /*Responsividade */
 
