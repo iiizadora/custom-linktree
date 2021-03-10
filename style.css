@@ -148,7 +148,7 @@ h2 {
 
 /*Responsividade */
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .container {
     position: absolute;
     width: 15rem;
